@@ -20,6 +20,9 @@ selawik.WT14.result is the result file from energyScenario.php
 
 MySQL table format:
 
+mysql> use powerCurve;
+Database changed
+
 mysql> describe selawik;
 +-------------+----------+------+-----+---------+-------+
 | Field       | Type     | Null | Key | Default | Extra |
@@ -30,4 +33,17 @@ mysql> describe selawik;
 2 rows in set (0.00 sec)
 
 mysql>
+
+CREATE TABLE `selawik` (
+	`packet_date` datetime NOT NULL,
+	`windspeedMS` float NOT NULL,
+	PRIMARY KEY (`packet_date`)
+) ENGINE=MyISAM DEFAULT CHARSET=ascii COLLATE=ascii_bin;
+
+```
+
+## Importing Data ##
+
+```
+./importTM2formattedCSV.php resolute.csv resolute | mysql -uroot -proadtoad powerCurve
 ```

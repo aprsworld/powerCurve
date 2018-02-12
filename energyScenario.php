@@ -3,6 +3,7 @@
 $pCurves[0]='BWC Excel-R';
 $pCurves[1]='APRS WT10';
 $pCurves[2]='APRS WT14';
+$pCurves[3]='APRS HR3';
 /* BWC Excel-R 7.5kW
 index is m/s bin
 value is kilowatts output
@@ -121,6 +122,39 @@ $powerCurve[2]=array(
 	23=>0.379,
 	24=>0.379,
 	25=>0.379
+);
+
+/* APRS World HR3W
+index is m/s bin
+value is kilowatts output
+ */
+$powerCurve[3]=array(
+	0=>0.00,
+	1=>0.00,
+	2=>0.00,
+	3=>0.00,
+	4=>0.10,
+	5=>0.25,
+	6=>0.40,
+	7=>0.60,
+	8=>1.00,
+	9=>1.35,
+	10=>1.75,
+	11=>2.00,
+	12=>2.50,
+	13=>3.00,
+	14=>3.00,
+	15=>3.00,
+	16=>2.85,
+	17=>2.10,
+	18=>1.85,
+	19=>1.00,
+	20=>0.25, 
+	21=>0.12,
+	22=>0,
+	23=>0,
+	24=>0,
+	25=>0
 );
 
 //print_r($powerCurve);
