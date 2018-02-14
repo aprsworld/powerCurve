@@ -47,3 +47,8 @@ CREATE TABLE `selawik` (
 ```
 ./importTM2formattedCSV.php resolute.csv resolute | mysql -uroot -proadtoad powerCurve
 ```
+
+## Generating HTML index of graph outputs ##
+```
+./htmlIndexOfBars.php examples/resolute/hr3/ "Sample APRS World HR3 @ Resolute, Nunavut from 1995 TM2 Data" > examples/resolute/hr3/index.html
+```
