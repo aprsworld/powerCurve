@@ -31,6 +31,11 @@ closedir($dir);
 ?>
 <html>
 <?
+if ( isset($_SERVER['argv'][2]) ) {
+	printf("<h1>%s</h1>\n",htmlspecialchars($_SERVER['argv'][2]));
+}
+
+
 for ( $i=0 ; $i<count($imageFiles) ; $i++ ) {
 	printf("\t<img src=\"%s\" /><br />\n",$imageFiles[$i]);
 
